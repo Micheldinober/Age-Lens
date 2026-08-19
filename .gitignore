@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Datasets / generated data
+aligned/
+data/manifest.csv
+data/manifest_aligned.csv
+
+# Model weights (large binaries)
+models/*.task
+
+# Training artifacts too large for git (keep only best_model.pt + small metrics/plots)
+runs/*/last_checkpoint.pt
+runs/*/comparison_report.csv
+runs/*/test_split.csv
+
+# Backend runtime uploads
+backend/uploads/
+
+# Archives
+*.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
